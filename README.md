@@ -51,46 +51,46 @@ Registra e exibe todas as movimentações de estoque, como adições e remoçõe
 
 ## Estrutura das Classes
 
-### Classe 'Produto'
+### Classe `Produto`
 Representa um produto no estoque, contendo atributos como:
-- 'nome': Nome do produto.
-- 'codigo': Código único de identificação do produto.
-- 'categoria': Categoria do produto.
-- 'quantidade_estoque': Quantidade disponível no estoque.
-- 'preco': Preço unitário do produto.
-- 'descricao': Breve descrição do produto.
-- 'fornecedor': Nome do fornecedor do produto.
+- `nome`: Nome do produto.
+- `codigo`: Código único de identificação do produto.
+- `categoria`: Categoria do produto.
+- `quantidade_estoque`: Quantidade disponível no estoque.
+- `preco`: Preço unitário do produto.
+- `descricao`: Breve descrição do produto.
+- `fornecedor`: Nome do fornecedor do produto.
 
-### Métodos da Classe 'Produto'
-- 'adicionar_estoque(quantidade)': Adiciona uma quantidade ao estoque do produto.
-- 'remover_estoque(quantidade)': Remove uma quantidade do estoque, com verificação de disponibilidade.
-- 'exibir_detalhes()': Exibe todos os detalhes do produto.
-- 'exibir_estoque()': Exibe o nome e a quantidade em estoque do produto.
+### Métodos da Classe `Produto`
+- `adicionar_estoque(quantidade)`: Adiciona uma quantidade ao estoque do produto.
+- `remover_estoque(quantidade)`: Remove uma quantidade do estoque, com verificação de disponibilidade.
+- `exibir_detalhes()`: Exibe todos os detalhes do produto.
+- `exibir_estoque()`: Exibe o nome e a quantidade em estoque do produto.
 
-### Classe 'Venda'
+### Classe `Venda`
 Representa uma venda realizada no sistema, com os seguintes atributos:
-- 'produto': Produto vendido.
-- 'quantidade': Quantidade do produto vendida.
-- 'desconto': Percentual de desconto aplicado.
-- 'valor_total': Valor total da venda após o desconto.
-- 'data': Data e hora da venda.
+- `produto`: Produto vendido.
+- `quantidade`: Quantidade do produto vendida.
+- `desconto`: Percentual de desconto aplicado.
+- `valor_total`: Valor total da venda após o desconto.
+- `data`: Data e hora da venda.
 
-### Métodos da Classe 'Venda'
-- 'calcular_valor_total()': Calcula o valor total da venda com base no preço e desconto.
-- 'exibir_recibo()': Exibe o recibo com os detalhes da venda.
+### Métodos da Classe `Venda`
+- `calcular_valor_total()`: Calcula o valor total da venda com base no preço e desconto.
+- `exibir_recibo()`: Exibe o recibo com os detalhes da venda.
 
-### Classe 'Estoque'
+### Classe `Estoque`
 Gerencia o estoque e as vendas, com os seguintes métodos:
-- 'adicionar_produto(produto)': Adiciona um novo produto ao estoque, verificando se o código é único.
-- 'registrar_venda(codigo, quantidade, desconto)': Registra uma venda, atualiza o estoque e gera um recibo.
-- 'consultar_produtos()': Exibe todos os produtos cadastrados no estoque com seus detalhes.
-- 'consultar_estoque()': Exibe a quantidade disponível de cada produto.
-- 'relatorio_vendas()': Gera um relatório com todas as vendas realizadas.
-- 'historico_movimentacoes_estoque()': Exibe o histórico de movimentações de estoque, como adições e vendas.
+- `adicionar_produto(produto)`: Adiciona um novo produto ao estoque, verificando se o código é único.
+- `registrar_venda(codigo, quantidade, desconto)`: Registra uma venda, atualiza o estoque e gera um recibo.
+- `consultar_produtos()`: Exibe todos os produtos cadastrados no estoque com seus detalhes.
+- `consultar_estoque()`: Exibe a quantidade disponível de cada produto.
+- `relatorio_vendas()`: Gera um relatório com todas as vendas realizadas.
+- `historico_movimentacoes_estoque()`: Exibe o histórico de movimentações de estoque, como adições e vendas.
 
 ## Como Usar
 
 ### 1. Clonando o Repositório
 Primeiro, clone o repositório para sua máquina local:
-'''bash'''
+```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
