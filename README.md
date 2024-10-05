@@ -1,3 +1,6 @@
+# Renan de França Gonçalves
+# RM558413
+
 # Sistema de Gestão de Estoque e Vendas
 
 Este projeto é um sistema de gestão de estoque e vendas, implementado em Python. Ele permite o cadastro de produtos, a realização de vendas com descontos e atualizações automáticas no estoque, além da geração de recibos e relatórios de vendas e movimentações.
